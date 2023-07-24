@@ -11,9 +11,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="forcode.css">
+    
 </head>
 <body>
-    <header>Python Documentation</header>
+    <div class="title">
+        
+        <header class="header">Python Documentation</header>
+        <div class="inside">
+        <p class="subtitle">A brief intro to python</p>
+        </div>
+        </div>
+    </div>
     <nav>
         <ul>
         </ul>
@@ -48,9 +56,8 @@
             <header>First Code</header>
             <article>
                 <p>Let's start with a classic "Hello, World!" program. It's the customary way to greet the programming world!</p>
-                <pre>
-                    <code>print("Hello, World!")</code>
-                </pre>
+                <pre class="codeblock">
+<code class="language-python">print("Hello, World!")</code></pre>
                 <p>Save this code in a file with a <code>.py</code> extension (e.g., <code>hello.py</code>). Open your terminal, navigate to the file's directory, and run the program using the command <code>python hello.py</code>. You should see the output "Hello, World!" displayed on your screen.</p>
             </article>
         </section>
@@ -59,11 +66,10 @@
             <header>Variables</header>
             <article>
                 <p>Variables in Python are used to store data values. You don't need to explicitly declare the variable's type; Python infers it from the assigned value. Here's an example:</p>
-                <pre>
-                    <code>name = "John"
+                <pre class="codeblock">
+<code class="language-python">name = "John"
 age = 24
-gamer = False</code>
-                </pre>
+gamer = False</code></pre>
             </article>
         </section>
         <hr>
@@ -77,15 +83,14 @@ gamer = False</code>
                     <li>Strings: sequences of characters (e.g., "Hello", 'Python')</li>
                     <li>Booleans: represent truth values (True or False)</li>
                 </ul>
-                <pre>
-                    <code># Examples of data types
+                <pre class="codeblock">
+<code class="language-python"># Examples of data types
 age = 25
 pi = 3.14
 name = "Alice"
 is_student = True
 
-print(age, pi, name, is_student)</code>
-                </pre>
+print(age, pi, name, is_student)</code></pre>
             </article>
         </section>
         <hr>
@@ -98,8 +103,8 @@ print(age, pi, name, is_student)</code>
                     <li>Comparison operators: <code>==</code>, <code>!=</code>, <code>&gt;</code>, <code>&lt;</code>, <code>&gt;=</code>, <code>&lt;=</code></li>
                     <li>Logical operators: <code>and</code>, <code>or</code>, <code>not</code></li>
                 </ul>
-                <pre>
-                    <code>a = 7
+                <pre class="codeblock">
+<code class="language-python">a = 7
 b = 2
 
 # addition
@@ -121,8 +126,7 @@ print ('Floor Division: ', a // b)
 print ('Modulo: ', a % b)  
 
 # a to the power b
-print ('Power: ', a ** b)</code>
-                </pre>
+print ('Power: ', a ** b)</code></pre>
             </article>
         </section>
         <hr>
@@ -130,8 +134,8 @@ print ('Power: ', a ** b)</code>
             <header>Conditional Statements</header>
             <article>
                 <p>Conditional statements allow you to make decisions in your code based on certain conditions. Python uses the <code>if</code>, <code>elif</code>, and <code>else</code> keywords for this purpose.</p>
-                <pre>
-                    <code># Example of a conditional statement
+                <pre class="codeblock">
+<code class="language-python"># Example of a conditional statement
 num = int(input("Enter a number: "))
 
 if num > 0:
@@ -139,8 +143,7 @@ if num > 0:
 elif num < 0:
     print("The number is negative.")
 else:
-    print("The number is zero.")</code>
-                </pre>
+    print("The number is zero.")</code></pre>
             </article>
         </section>
         <hr>
@@ -161,7 +164,7 @@ else:
             <header>Functions</header>
             <article>
                 <p>Functions are blocks of reusable code that perform specific tasks. They help in organizing your code and making it more manageable. A block of code that performs a specific task.</p>
-                <pre class="test">
+                <pre class="codeblock">
 <code class="language-python"># Example of a function
 def greet(name):
     print("Hello, " + name + "! Welcome to Python programming.")
@@ -176,5 +179,9 @@ greet("John")</code></pre>
         </section>
     </main>
     <script src="forcode.js"></script>
+
+    <footer>
+        <small>Copyright © 2023 . All Rights Reserved . <a>Contacts</a></small>
+    </footer>
 </body>
 </html>

@@ -117,7 +117,7 @@ pre[class*="language-"] {
   cursor: help;
 }
 
-pre.test{
+pre.codeblock{
     font-family: "PT Sans", 'Courier New', Courier, monospace;
     display: block;
     text-align: left;
@@ -132,6 +132,7 @@ pre.test{
     overflow-x: auto;
   }
 
-pre.test code{
+pre.codeblock code{
     display:block;
+    white-space: pre-line;
   }
