@@ -136,3 +136,15 @@ pre.codeblock code{
     display:block;
     white-space: pre-line;
   }
+
+
+@media (max-width : 600px) {
+
+  pre.codeblock {
+    width: 100%;
+    padding: 15px;
+    min-width: 233px;
+    font-size: 1.2rem;
+  }
+
+}
