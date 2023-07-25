@@ -130,19 +130,18 @@ footer{
 
 @media only screen and (max-width: 400px) {
   #main-doc{
-    padding: 10px;
+    padding: 4px;
   }
 
-  pre code {
+  pre.codeblock {
     width: 100%;
     padding: 15px;
     padding-left: 10px;
-    padding-right: 45px;
     min-width: 233px;
   }
 
   footer{
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 }
 
