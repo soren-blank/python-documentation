@@ -109,7 +109,7 @@ footer{
 
 
 #main-doc{
-  padding: 20px;
+  padding: 20px 5px 20px 20px;
   margin: 0 auto;
   margin-left:310px;
 }
@@ -204,10 +204,14 @@ nav{
     position: relative;
     margin-left: 0px;
     display:block;
+    margin-right:0px;
+    padding-right:5px;
   }
 
   body{
     margin-top:300px;
+    margin-right:0px;
+    padding-right:0px;
   }
 
   .title{
