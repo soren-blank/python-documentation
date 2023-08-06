@@ -104,13 +104,14 @@ footer{
   font-size: 1.2rem;
   padding-bottom: 20px;
   color:#4d4e53;
+  padding-left:300px;
 }
 
 
 #main-doc{
   padding: 20px;
-  max-width: 800px;
   margin: 0 auto;
+  margin-left:310px;
 }
 
 .title{
@@ -119,6 +120,7 @@ footer{
   margin: 0 auto;
   text-align: center;
   font-size:2rem;
+  padding-left:310px;
 }
 
 .subtitle{
@@ -127,26 +129,104 @@ footer{
   /* margin-right: 125px; */
 }
 
+nav{
+  display:block;
+}
 
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: rgba(0, 22, 22, 0.4);
+}
 
+#navbar ul {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
 
+#navbar li {
+  color: #4d4e53;
+  border-top: 1.5px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+  padding: 15px 30px;
+}
 
+#navbar a {
+  display: block;
+  color: #4d4e53;
+  text-decoration: none;
+  cursor: pointer;
+}
 
-@media (max-width : 600px) {
-  #main-doc{
-    padding: 4px;
-    margin: 1px;
+#navbar li:hover {
+  background-color: #f7f7f7;
+}
+
+#navbar header{
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 10px;
+  padding-bottom: 0px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 815px) {
+  /* For mobile phones: */
+  #navbar ul {
+    margin:10px;
+    border: 1px solid;
+    height: 200px;
   }
 
-  p, li, p > code, li > code{
-    font-size: 1.2rem;
+  #navbar {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
   }
 
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 200px;
+    display:block;
+  }
 
-  footer{
-    font-size: 1.2rem;
+  
+}
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+
+  pre.codeblockcode {
+    margin-left: -20px;
+    width: 100%;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 45px;
+    min-width: 233px;
   }
 }
+
+
+
 
 .red{
   color: #a31515;
