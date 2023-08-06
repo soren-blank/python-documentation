@@ -203,8 +203,23 @@ nav{
   #main-doc {
     position: relative;
     margin-left: 0px;
-    margin-top: 200px;
     display:block;
+  }
+
+  body{
+    margin-top:300px;
+  }
+
+  .title{
+    display:none;
+  }
+
+  .title{
+    padding-left:0px;
+  }
+
+  footer{
+    padding-left:0px;
   }
 
   
