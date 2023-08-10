@@ -4,8 +4,195 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Python Documentation</title>
+    <meta name="description" content="A simple Python Documentation for the begineers.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="forcode.css">
+    
 </head>
 <body>
-    
+    <div class="title">
+        
+        <header class="header">Python Documentation</header>
+        <div class="inside">
+        <p class="subtitle">A brief intro to python</p>
+        </div>
+        </div>
+    </div>
+    <nav id="navbar">
+        <header>Python Doc</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#Python_Setup">Python Setup</a></li>
+            <li><a class="nav-link" href="#First_Code">First Code</a></li>
+            <li><a class="nav-link" href="#Variables">Variables</a></li>
+            <li><a class="nav-link" href="#Data_Types">Data Types</a></li>
+            <li><a class="nav-link" href="#Operators">Operators</a></li>
+            <li><a class="nav-link" href="#Conditional_Statements">Conditional Statements</a></li>
+            <li><a class="nav-link" href="#Loops">Loops</a></li>
+            <li><a class="nav-link" href="#Functions">Functions</a></li>
+            <li><a class="nav-link" href="#Congrats">Keep Learning ~</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <article>
+                <p>Python is a cross-platform programming language, which means that it can run on multiple platforms like Windows, macOS, Linux, and has even been ported to the Java and .NET virtual machines. It is free and open-source.</p>
+                <p>Even though most of today's Linux and Mac have Python pre-installed in it, the version might be out-of-date. So, it is always a good idea to install the most current version.</p>
+            </article>
+        </section>
+        <hr>
+        <section class="main-section" id="Python_Setup">
+            <header>Python Setup</header>
+
+            <article>
+                <p>There are so many ways to run Python. If you want to code Python from your browser then my suggestion would be <a href="https://www.replit.com">Replit</a>.</p>
+                <p>But if you want to do Python development locally, then you will have to install a few things in order to setup your local machine for coding.</p>
+                <p>Follow the following steps to run Python on your computer: </p>
+                <ul>
+                    <li>Download <a href="https://www.python.org/downloads/">Python</a> and <a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
+                    <li>Install Python and Visual Studio Code</li>
+                    <li>Open Visual Studio Code</li>
+                    <li>Open a new file and save it with <code>.py</code> extension</li>
+                    <li>Write your code and run it.</li>
+                </ul>
+            </article>
+        </section>
+        <hr>
+        <section class="main-section" id="First_Code">
+            <header>First Code</header>
+            <article>
+                <p>Let's start with a classic "Hello, World!" program. It's the customary way to greet the programming world!</p>
+                <pre class="codeblock">
+<code class="language-python">print("Hello, World!")</code></pre>
+                <p>Save this code in a file with a <code>.py</code> extension (e.g., <code>hello.py</code>). Open your terminal, navigate to the file's directory, and run the program using the command <code>python hello.py</code>. You should see the output "Hello, World!" displayed on your screen.</p>
+            </article>
+        </section>
+        <hr>
+        <section class="main-section" id="Variables">
+            <header>Variables</header>
+            <article>
+                <p>Variables in Python are used to store data values. You don't need to explicitly declare the variable's type; Python infers it from the assigned value. Here's an example:</p>
+                <pre class="codeblock">
+<code class="language-python">name = "John"
+age = 24
+gamer = False</code></pre>
+            </article>
+        </section>
+        <hr>
+        <section class="main-section" id="Data_Types">
+            <header>Data Types</header>
+            <article>
+                <p>In computer programming, data types specify the type of data that can be stored inside a variable. Python supports various data types. Some common ones are:</p>
+                <ul>
+                    <li>Integers: whole numbers (e.g., 42, -17)</li>
+                    <li>Floats: numbers with decimal points (e.g., 3.14, -0.5)</li>
+                    <li>Strings: sequences of characters (e.g., "Hello", 'Python')</li>
+                    <li>Booleans: represent truth values (True or False)</li>
+                </ul>
+                <pre class="codeblock">
+<code class="language-python"># Examples of data types
+age = 25
+pi = 3.14
+name = "Alice"
+is_student = True
+
+print(age, pi, name, is_student)</code></pre>
+            </article>
+        </section>
+        <hr>
+        <section class="main-section" id="Operators">
+            <header>Operators</header>
+            <article>
+                <p>Arithmetic operators are used to perform mathematical operations like addition, subtraction, multiplication, etc. Operators are symbols that perform operations on variables and values. Python supports various types of operators:</p>
+                <ul>
+                    <li>Arithmetic operators: <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>//</code> (floor division), <code>%</code> (modulo)</li>
+                    <li>Comparison operators: <code>==</code>, <code>!=</code>, <code>&gt;</code>, <code>&lt;</code>, <code>&gt;=</code>, <code>&lt;=</code></li>
+                    <li>Logical operators: <code>and</code>, <code>or</code>, <code>not</code></li>
+                </ul>
+                <pre class="codeblock">
+<code class="language-python">a = 7
+b = 2
+
+# addition
+print ('Sum: ', a + b)  
+
+# subtraction
+print ('Subtraction: ', a - b)   
+
+# multiplication
+print ('Multiplication: ', a * b)  
+
+# division
+print ('Division: ', a / b) 
+
+# floor division
+print ('Floor Division: ', a // b)
+
+# modulo
+print ('Modulo: ', a % b)  
+
+# a to the power b
+print ('Power: ', a ** b)</code></pre>
+            </article>
+        </section>
+        <hr>
+        <section class="main-section" id="Conditional_Statements">
+            <header>Conditional Statements</header>
+            <article>
+                <p>Conditional statements allow you to make decisions in your code based on certain conditions. Python uses the <code>if</code>, <code>elif</code>, and <code>else</code> keywords for this purpose.</p>
+                <pre class="codeblock">
+<code class="language-python"># Example of a conditional statement
+num = int(input("Enter a number: "))
+
+if num > 0:
+    print("The number is positive.")
+elif num < 0:
+    print("The number is negative.")
+else:
+    print("The number is zero.")</code></pre>
+            </article>
+        </section>
+        <hr>
+        <section class="main-section" id="Loops">
+            <header>Loops</header>
+            <article>
+                <p>In computer programming, loops are used to repeat a block of code. Loops enable you to execute a block of code repeatedly.</p>
+                <p>For example, if we want to show a message 100 times, then we can use a loop. It's just a simple example; you can achieve much more with loops.</p>
+                <p>There are 2 types of loops in Python:</p>
+                <ul>
+                    <li>for loop</li>
+                    <li>while loop</li>
+                </ul>
+            </article>
+        </section>
+        <hr>
+        <section class="main-section" id="Functions">
+            <header>Functions</header>
+            <article>
+                <p>Functions are blocks of reusable code that perform specific tasks. They help in organizing your code and making it more manageable. A block of code that performs a specific task.</p>
+                <pre class="codeblock">
+<code class="language-python"># Example of a function
+def greet(name):
+    print("Hello, " + name + "! Welcome to Python programming.")
+
+# Function call
+greet("John")</code></pre>
+            </article>
+        </section>
+        <hr>
+        <section class="sub-section" id="Congrats">
+            <p>Congratulations! You've now covered the essential elements of Python programming. Keep practicing, exploring more concepts, and building exciting projects to enhance your coding skills. Happy coding!</p>
+        </section>
+    </main>
+    <script src="forcode.js"></script>
+
+    <footer>
+        <small>Copyright © 2023 . All Rights Reserved . <a>Contacts</a></small>
+    </footer>
 </body>
 </html>
